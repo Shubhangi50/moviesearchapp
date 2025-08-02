@@ -16,7 +16,8 @@ const AppProvider = ({children}) =>{
         try{
        const res = await fetch(url);
        const data = await res.json();
-       console.log(data);
+       
+       console.log("abc",data);
        if(data.Response==="True"){
         setIsLoading(false);
         setMovies(data.Search);
